@@ -1,9 +1,10 @@
 package com.stevestrates.replit
 
+import io.reactivex.Single
 import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.PUT
-import rx.Single
+
 
 data class ExecRequest(val language: String, val command: String)
 data class ExecResult(val result: String)

@@ -1,6 +1,6 @@
 package com.stevestrates.replit
 
-import rx.Single
+import io.reactivex.Single
 
 class ReplitRepository(private val api: IReplitApi) {
     fun execPython(command: String): Single<String> {

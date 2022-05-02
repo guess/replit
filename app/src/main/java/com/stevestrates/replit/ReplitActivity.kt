@@ -23,7 +23,7 @@ class ReplitActivity : AppCompatActivity() {
             viewModel.executeCode()
         }
 
-        viewModel.result.observe(this) {
+        viewModel.state.observe(this) {
             binding.resultsPreview.text = when(it) {
                 Loading -> "Loading..."
                 is Success -> it.result

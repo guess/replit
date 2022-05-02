@@ -1,7 +1,8 @@
 package com.stevestrates.replit
 
-import rx.Single
-import rx.schedulers.Schedulers
+import io.reactivex.Single
+import io.reactivex.schedulers.Schedulers
+
 
 interface IReplitApi {
     fun putExec(command: String, language: String = "python"): Single<ExecResult>
