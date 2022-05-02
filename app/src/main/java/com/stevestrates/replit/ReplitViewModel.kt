@@ -13,6 +13,10 @@ class ReplitViewModel(private val repo: ReplitRepository) : ViewModel() {
         get() = _state
 
     fun executeCode() {
+        if (command == null) {
+            updateResult(Failure("No code to run"))
+        }
+
         command?.let {
             updateResult(Loading)
             repo.execPython(it).subscribe(
@@ -27,6 +31,8 @@ class ReplitViewModel(private val repo: ReplitRepository) : ViewModel() {
     }
 
     fun onCodeChanged(code: String) {
-        command = code
+        command = code.ifEmpty {
+            null
+        }
     }
 }
