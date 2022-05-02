@@ -13,8 +13,8 @@ class ReplitViewModel(private val repo: ReplitRepository) : ViewModel() {
         get() = _state
 
     fun executeCode() {
-        updateResult(Loading)
         command?.let {
+            updateResult(Loading)
             repo.execPython(it).subscribe(
                 { commandResult -> updateResult(Success(commandResult)) },
                 { error -> updateResult(Failure(error.message))}
