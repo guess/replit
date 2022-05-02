@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Theme.Replit" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:statusBarColor">#111111</item>
-        <item name="android:background">#111111</item>
+        <item name="android:statusBarColor">@color/monokia_pro_black</item>
+        <item name="android:background">@color/monokia_pro_black</item>
     </style>
 </resources>

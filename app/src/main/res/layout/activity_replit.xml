@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ReplitActivity">
 
-    <EditText
+    <com.amrdeveloper.codeview.CodeView
         android:id="@+id/code_editor"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#222222"
+        android:background="@color/grey_200"
         android:padding="16dp"
         android:text="Hello World!"
         android:fontFamily="@font/monaco"

@@ -5,11 +5,13 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
+import com.amrdeveloper.codeview.CodeView
 import com.stevestrates.replit.databinding.ActivityReplitBinding
 import com.stevestrates.replit.models.Failure
 import com.stevestrates.replit.models.Initial
 import com.stevestrates.replit.models.Loading
 import com.stevestrates.replit.models.Success
+import com.stevestrates.replit.ui.editor.PythonLanguage
 import org.koin.android.ext.android.inject
 
 class ReplitActivity : AppCompatActivity() {
@@ -35,7 +37,14 @@ class ReplitActivity : AppCompatActivity() {
         binding.codeEditor.addTextChangedListener {
             viewModel.onCodeChanged(it.toString())
         }
+        styleCodeEditor(binding.codeEditor)
 
         setContentView(binding.root)
+    }
+
+    private fun styleCodeEditor(codeEditor: CodeView) {
+        PythonLanguage.applyMonokaiTheme(this, codeEditor)
+        codeEditor.setIndentationStarts(PythonLanguage.indentationStarts)
+        codeEditor.setIndentationEnds(PythonLanguage.indentationEnds)
     }
 }
