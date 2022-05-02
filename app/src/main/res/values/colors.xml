@@ -10,6 +10,7 @@
     <color name="gold">#e6b121</color>
     <color name="grey_100">#111111</color>
     <color name="grey_200">#222222</color>
+    <color name="green">#00E676</color>
 
     <!--Monokai Pro Theme Colors-->
     <color name="monokia_pro_green">#9ccc6b</color>
