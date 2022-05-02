@@ -2,6 +2,7 @@ package com.stevestrates.replit
 
 import androidx.lifecycle.Observer
 import com.stevestrates.replit.models.*
+import com.stevestrates.replit.utils.InstantExecutorExtension
 import io.mockk.*
 import io.reactivex.Single
 import org.amshove.kluent.shouldBeEqualTo
