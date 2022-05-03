@@ -1,5 +1,7 @@
 package com.stevestrates.replit
 
+import com.stevestrates.replit.apis.ExecResult
+import com.stevestrates.replit.apis.IReplitApi
 import com.stevestrates.replit.features.replit.ReplitRepository
 import io.mockk.every
 import io.mockk.mockk
