@@ -1,4 +1,4 @@
-package com.stevestrates.replit
+package com.stevestrates.replit.apis
 
 import io.reactivex.Single
 import retrofit2.http.Body

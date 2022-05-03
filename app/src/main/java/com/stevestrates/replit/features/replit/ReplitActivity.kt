@@ -1,4 +1,4 @@
-package com.stevestrates.replit
+package com.stevestrates.replit.features.replit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,8 +10,6 @@ import com.stevestrates.replit.models.Failure
 import com.stevestrates.replit.models.Loading
 import com.stevestrates.replit.models.Success
 import com.stevestrates.replit.ui.editor.PythonLanguage
-import com.stevestrates.replit.features.replit.ReplitViewModel
-import com.stevestrates.replit.features.replit.ReplitViewModelFactory
 
 class ReplitActivity : AppCompatActivity() {
     private val viewModel: ReplitViewModel by viewModels { ReplitViewModelFactory() }

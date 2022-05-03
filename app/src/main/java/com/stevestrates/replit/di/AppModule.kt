@@ -1,5 +1,8 @@
-package com.stevestrates.replit
+package com.stevestrates.replit.di
 
+import com.stevestrates.replit.apis.IReplitApi
+import com.stevestrates.replit.apis.ReplitApi
+import com.stevestrates.replit.apis.ReplitApiService
 import com.stevestrates.replit.features.replit.ReplitRepository
 import com.stevestrates.replit.features.replit.ReplitViewModel
 import org.koin.dsl.module
