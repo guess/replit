@@ -1,5 +1,6 @@
 package com.stevestrates.replit
 
+import com.stevestrates.replit.features.replit.ReplitRepository
 import io.mockk.every
 import io.mockk.mockk
 import io.reactivex.Single

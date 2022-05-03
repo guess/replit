@@ -4,15 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.widget.addTextChangedListener
-import androidx.lifecycle.Observer
 import com.amrdeveloper.codeview.CodeView
 import com.stevestrates.replit.databinding.ActivityReplitBinding
 import com.stevestrates.replit.models.Failure
-import com.stevestrates.replit.models.Initial
 import com.stevestrates.replit.models.Loading
 import com.stevestrates.replit.models.Success
 import com.stevestrates.replit.ui.editor.PythonLanguage
-import org.koin.android.ext.android.inject
+import com.stevestrates.replit.features.replit.ReplitViewModel
+import com.stevestrates.replit.features.replit.ReplitViewModelFactory
 
 class ReplitActivity : AppCompatActivity() {
     private val viewModel: ReplitViewModel by viewModels { ReplitViewModelFactory() }

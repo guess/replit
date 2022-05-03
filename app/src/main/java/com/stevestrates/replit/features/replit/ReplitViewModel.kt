@@ -1,4 +1,4 @@
-package com.stevestrates.replit
+package com.stevestrates.replit.features.replit
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

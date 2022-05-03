@@ -1,5 +1,7 @@
 package com.stevestrates.replit
 
+import com.stevestrates.replit.features.replit.ReplitRepository
+import com.stevestrates.replit.features.replit.ReplitViewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
