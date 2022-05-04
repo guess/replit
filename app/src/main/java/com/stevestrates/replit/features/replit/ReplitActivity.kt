@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.widget.addTextChangedListener
 import com.amrdeveloper.codeview.CodeView
+import com.stevestrates.replit.R
 import com.stevestrates.replit.databinding.ActivityReplitBinding
 import com.stevestrates.replit.models.Failure
 import com.stevestrates.replit.models.Loading
@@ -24,7 +25,7 @@ class ReplitActivity : AppCompatActivity() {
 
         viewModel.state.observe(this) {
             binding.resultsPreview.text = when(it) {
-                Loading -> "Loading..."
+                Loading -> getString(R.string.loading)
                 is Success -> it.result
                 is Failure -> it.error
                 else -> ""
